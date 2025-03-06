@@ -1,0 +1,19 @@
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: #1565c0;
+}
+
+.active {
+  text-decoration: underline;
+  color: #1565c0;
+}

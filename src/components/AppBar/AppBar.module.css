@@ -1,0 +1,38 @@
+.AppBar {
+  margin-bottom: 40px;
+  border-bottom: 5px solid black;
+  padding: 0 40px;
+  border-radius: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.regist {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+  color: blue;
+}
+
+.active {
+  text-decoration: underline;
+  color: blue;
+}
