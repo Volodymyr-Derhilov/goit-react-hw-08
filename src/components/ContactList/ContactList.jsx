@@ -9,7 +9,13 @@ function ContactList() {
     const dispath = useDispatch();
 
     useEffect(() => {
-        dispath(fetchContacts());
+        const abortController = new AbortController();
+        
+        dispath(fetchContacts({ signal: abortController.signal }));
+        
+        return () => {
+            abortController.abort();
+        };
     }, [dispath])
 
     const filteredContacts = useSelector(selectFilteredContacts);
