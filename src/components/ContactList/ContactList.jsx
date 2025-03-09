@@ -3,7 +3,7 @@ import Contact from '../Contact/Contact';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFilteredContacts } from '../../redux/contacts/contactsSelectors';
 import { useEffect } from 'react';
-import { fetchContacts } from '../../redux/contacts/contactsOps';
+import { fetchContacts } from '../../redux/contacts/operations';
 
 function ContactList() {
     const dispath = useDispatch();
